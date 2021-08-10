@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.6.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.5/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"[] Titulos","c":[{"t":"list_item","d":3,"p":{"lines":[11,12]},"v":"Exemplo👇️:"}]},{"t":"heading","d":1,"p":{"lines":[13,14]},"v":"The largest heading","c":[{"t":"heading","d":2,"p":{"lines":[15,16]},"v":"The second largest heading","c":[{"t":"heading","d":3,"p":{"lines":[17,18]},"v":"The smallest heading","c":[{"t":"bullet_list","d":4,"p":{"lines":[19,23]},"v":"","c":[{"t":"list_item","d":5,"p":{"lines":[19,20]},"v":"Estilo de texto"},{"t":"list_item","d":5,"p":{"lines":[21,22]},"v":"Você pode indicar a ênfase com texto em negrito,"}]},{"t":"bullet_list","d":4,"p":{"lines":[25,29]},"v":"","c":[{"t":"list_item","d":5,"p":{"lines":[25,26]},"v":"Estilo Sintaxe Atalho de teclado Exemplo Saída"},{"t":"list_item","d":5,"p":{"lines":[27,28]},"v":"Audacioso ** ** ou __ __ comando / controle + b **This is bold text** Este é um texto em negrito"}]},{"t":"bullet_list","d":4,"p":{"lines":[31,37]},"v":"","c":[{"t":"list_item","d":5,"p":{"lines":[31,32]},"v":"Tachado ~~ ~~ <del>This was mistaken text</del> Este era um texto errado"},{"t":"list_item","d":5,"p":{"lines":[33,34]},"v":"Negrito e itálico aninhado ** ** e _ _ **This text is <em>extremely</em> important** Este texto é extremamente importante"},{"t":"list_item","d":5,"p":{"lines":[35,36]},"v":"Tudo em negrito e itálico <strong>* *</strong> <strong><em>All this text is important</em></strong> Todo esse texto é importante"}]}]},{"t":"heading","d":3,"p":{"lines":[37,38]},"v":"Citando texto:"}]}]},{"t":"heading","d":1,"p":{"lines":[39,40]},"v":"- Você pode citar texto com um &gt;.","c":[{"t":"heading","d":2,"p":{"lines":[41,42]},"v":"In the words of Abraham Lincoln:"},{"t":"heading","d":2,"p":{"lines":[43,44]},"v":"&gt; Pardon my French"},{"t":"heading","d":2,"p":{"lines":[45,46]},"v":"- Citando código"},{"t":"heading","d":2,"p":{"lines":[47,48]},"v":"- Você pode chamar um código ou um comando dentro de uma frase com crases simples."}]},{"t":"heading","d":1,"p":{"lines":[49,50]},"v":"*O texto dentro dos crases não será formatado. Você também pode pressionar","c":[{"t":"heading","d":2,"p":{"lines":[51,52]},"v":"- o atalho de teclado commandou Ctrl+ epara inserir"},{"t":"heading","d":2,"p":{"lines":[53,54]},"v":"- os crases de um bloco de código dentro de uma linha de Markdown."},{"t":"heading","d":2,"p":{"lines":[55,56]},"v":"[x] Use <code>git status</code> to list all new or modified files that haven't yet been committed."},{"t":"heading","d":2,"p":{"lines":[57,58]},"v":"- Para formatar o código ou texto em seu próprio bloco distinto, use crases triplos."}]},{"t":"heading","d":1,"p":{"lines":[59,60]},"v":"- Alguns comandos básicos do Git são:","c":[{"t":"heading","d":2,"p":{"lines":[61,62]},"v":"- `` `"},{"t":"heading","d":2,"p":{"lines":[63,64]},"v":"- [x]git status"},{"t":"heading","d":2,"p":{"lines":[65,66]},"v":"- [x]git add"},{"t":"heading","d":2,"p":{"lines":[67,68]},"v":"- [x]git commit"},{"t":"heading","d":2,"p":{"lines":[69,70]},"v":"- `` `"},{"t":"heading","d":2,"p":{"lines":[71,72]},"v":"- Para obter mais informações, consulte &quot; Criando e destacando blocos de código &quot;."}]},{"t":"heading","d":1,"p":{"lines":[75,76]},"v":"- Links","c":[{"t":"heading","d":2,"p":{"lines":[77,78]},"v":"- Você pode criar um link embutido envolvendo o texto do link entre colchetes [ ]e, em seguida, envolvendo o URL entre parênteses ( ). Você também pode usar o atalho do teclado command + kpara criar um link."},{"t":"heading","d":2,"p":{"lines":[79,80]},"v":"- [x] This site was built using <a href=\"https://pages.github.com/\">GitHub Pages</a>."},{"t":"heading","d":2,"p":{"lines":[81,82]},"v":"Link renderizado"},{"t":"heading","d":2,"p":{"lines":[83,84]},"v":"-[] This site was built using <em>[GitHub Pages]</em>(https://pages.github.com/)*."},{"t":"heading","d":2,"p":{"lines":[85,86]},"v":"👆️:hand.this site was built using=&gt;"}]},{"t":"heading","d":1,"p":{"lines":[87,88]},"v":"- Listas"},{"t":"heading","d":1,"p":{"lines":[89,90]},"v":"- Você pode fazer uma lista não ordenada","c":[{"t":"heading","d":2,"p":{"lines":[91,92]},"v":"- precedendo uma ou mais linhas de texto com -ou *."},{"t":"heading","d":2,"p":{"lines":[93,94]},"v":"-George Washington"},{"t":"heading","d":2,"p":{"lines":[95,96]},"v":"-John Adams"},{"t":"heading","d":2,"p":{"lines":[97,98]},"v":"-Thomas Jefferson"}]},{"t":"heading","d":1,"p":{"lines":[99,100]},"v":"- Cada linha com um número.","c":[{"t":"heading","d":2,"p":{"lines":[101,102]},"v":"1. Maria"},{"t":"heading","d":2,"p":{"lines":[103,104]},"v":"2. Evim"},{"t":"heading","d":2,"p":{"lines":[105,106]},"v":"3. kevin","c":[{"t":"bullet_list","d":3,"p":{"lines":[107,109]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[107,108]},"v":"o caractere marcador da lista (1. ou)( -ou *) fique diretamente abaixo do primeiro caractere do texto no item acima dele."}]},{"t":"ordered_list","d":3,"p":{"lines":[109,115],"start":1},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[109,110],"index":1},"v":"1. First list item","c":[{"t":"list_item","d":6,"p":{"lines":[111,112]},"v":"First nested list item","c":[{"t":"list_item","d":8,"p":{"lines":[113,114]},"v":"Second nested list item"}]}]}]},{"t":"bullet_list","d":3,"p":{"lines":[115,121]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[115,116]},"v":"Listas de tarefas."},{"t":"list_item","d":4,"p":{"lines":[117,118]},"v":"Para criar uma lista de tarefas, prefacie"},{"t":"list_item","d":4,"p":{"lines":[118,120]},"v":"os itens da lista com um caractere de espaço regular seguido por<br>\n[ ]. Para marcar uma tarefa como concluída, use [x]."}]},{"t":"bullet_list","d":3,"p":{"lines":[121,127]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[121,122]},"v":"[x] #739"},{"t":"list_item","d":4,"p":{"lines":[123,124]},"v":"[ ] https://github.com/octo-org/octo-repo/issues/740"},{"t":"list_item","d":4,"p":{"lines":[125,126]},"v":"[ ] Add delight to the experience when all tasks are complete :tada:"}]},{"t":"bullet_list","d":3,"p":{"lines":[127,130]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[127,129]},"v":"Se a descrição de um item da lista de tarefas começar com um parêntese,<br>\nvocê precisará escapar com :)=&gt;👉️\\"}]},{"t":"bullet_list","d":3,"p":{"lines":[130,131]},"v":"","c":[{"t":"list_item","d":4,"p":{"lines":[130,131]},"v":"[ ] (Optional) Open a followup issue"}]}]}]}],"p":{}})</script>
+</body>
+</html>
